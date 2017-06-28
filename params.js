@@ -1,5 +1,4 @@
-module.exports = {
-  uniforms: {
+var shaderuniforms = {
     time: { type: "f", value: 1.0 },
     resolution: { type: "v2", value: [600,600] },
     mouse: { type: "v2", value: [0,0] },
@@ -21,7 +20,7 @@ module.exports = {
     image: { type: "f", value: 0 }
   };
 
-  params: {
+var shaderparams = {
     scale: { type: "slider", min: 0, max: 3, step: 0.1, name: "Scale" },
     param1: { type: "slider", min: 0, max: 3, step: 0.1, name: "Param 1" },
     param2: { type: "slider", min: 0, max: 3, step: 0.1, name: "Param 2" },
@@ -29,7 +28,7 @@ module.exports = {
     color1: { type: "colorpicker", name: "Color 2" }
   };
 
-  fragShader: `#define M_PI 3.1415926535897932384626433832795
+var fragShader = `#define M_PI 3.1415926535897932384626433832795
     uniform vec2 resolution;
     uniform float time;
     uniform vec2 mouse;
@@ -101,4 +100,3 @@ module.exports = {
 
     gl_FragColor= vec4(finalcolor, 1.0);
   `
-}
