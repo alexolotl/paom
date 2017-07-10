@@ -60,7 +60,7 @@ var fragShader = `#define M_PI 3.1415926535897932384626433832795
     color.r = floor(f / 256.0 / 256.0);
     color.g = floor((f - color.r * 256.0 * 256.0) / 256.0);
     color.b = floor(f - color.r * 256.0 * 256.0 - color.g * 256.0);
-    // now we have a vec3 with the 3 components in range [0..255]. Let's normalize it!
+
     return color / 255.0;
 }
 
@@ -109,4 +109,5 @@ var fragShader = `#define M_PI 3.1415926535897932384626433832795
 
       vec3 finalcolor = mix(solidstripes,gradientstripes,param8);
 
-      gl_FragColor= vec4(finalcolor, 1.0);`;
+      gl_FragColor= vec4(finalcolor, 1.0);
+    }`;
