@@ -22,11 +22,11 @@ var shaderuniforms = {
 
 var shaderparams = {
     param1: { type: "slider", min: 0, max: 3, step: 0.01, name: "Scale" },
-    param2: { type: "slider", min: 0, max: 3, step: 0.01, name: "Warp" },
-    param3: { type: "slider", min: 0, max: 3, step: 0.01, name: "Warp 2" },
-    param4: { type: "slider", min: 0, max: 3, step: 0.01, name: "Blur" },
+    param2: { type: "slider", min: 0, max: 6, step: 0.01, name: "Warp" },
+    param3: { type: "slider", min: 0, max: 10, step: 0.01, name: "Warp 2" },
+    param4: { type: "slider", min: 0, max: 1, step: 0.01, name: "Blur" },
     param5: { type: "slider", min: 0, max: 3, step: 0.01, name: "Twist" },
-    param6: { type: "slider", min: 0, max: .8, step: 0.01, name: "Bloat" },
+    param6: { type: "slider", min: 0, max: .5, step: 0.01, name: "Bloat" },
     param8: { type: "slider", min: 0, max: 3, step: 0.01, name: "Spin" },
     color1: { type: "colorpicker", name: "Color 1" },
     color2: { type: "colorpicker", name: "Color 2" }
