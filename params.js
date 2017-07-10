@@ -1,4 +1,4 @@
-var shaderuniforms = {
+shaderuniforms = {
     time: { type: "f", value: 1.0 },
     resolution: { type: "v2", value: [600,600] },
     mouse: { type: "v2", value: [0,0] },
@@ -20,7 +20,7 @@ var shaderuniforms = {
     image: { type: "f", value: 0 }
   };
 
-var shaderparams = {
+shaderparams = {
     param1: { type: "slider", min: 0, max: 3, step: 0.01, name: "Scale" },
     param2: { type: "slider", min: 0, max: 6, step: 0.01, name: "Warp" },
     param3: { type: "slider", min: 0, max: 10, step: 0.01, name: "Warp 2" },
@@ -32,7 +32,7 @@ var shaderparams = {
     color2: { type: "colorpicker", name: "Color 2" }
   };
 
-var fragShader = `#define M_PI 3.1415926535897932384626433832795
+fragShader = `#define M_PI 3.1415926535897932384626433832795
     uniform vec2 resolution;
     uniform float time;
     uniform vec2 mouse;
