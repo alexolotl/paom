@@ -21,9 +21,17 @@ var shaderuniforms = {
   };
 
 var shaderparams = {
-    scale: { type: "slider", min: 0, max: 3, step: 0.1, name: "Scale" },
-    param1: { type: "slider", min: 0, max: 3, step: 0.1, name: "Param 1" },
-    param2: { type: "slider", min: 0, max: 3, step: 0.1, name: "Param 2" },
+    scale: { type: "slider", min: 0, max: 3, step: 0.01, name: "Scale" },
+    param1: { type: "slider", min: 0, max: 3, step: 0.01, name: "Param 1" },
+    param2: { type: "slider", min: 0, max: 3, step: 0.01, name: "Param 2" },
+    param3: { type: "slider", min: 0, max: 3, step: 0.01, name: "Param 3" },
+    param4: { type: "slider", min: 0, max: 3, step: 0.01, name: "Param 4" },
+    param5: { type: "slider", min: 0, max: 3, step: 0.01, name: "Param 5" },
+    param6: { type: "slider", min: 0, max: 3, step: 0.01, name: "Param 6" },
+    param7: { type: "slider", min: 0, max: 3, step: 0.01, name: "Param 7" },
+    param8: { type: "slider", min: 0, max: 3, step: 0.01, name: "Param 8" },
+    param9: { type: "slider", min: 0, max: 3, step: 0.01, name: "Param 9" },
+    param10: { type: "slider", min: 0, max: 3, step: 0.01, name: "Param 10" },
     color1: { type: "colorpicker", name: "Color 1" },
     color1: { type: "colorpicker", name: "Color 2" }
   };
